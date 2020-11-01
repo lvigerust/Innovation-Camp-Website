@@ -9,6 +9,32 @@ body {
   padding: 0;
 }
 
+/*navigasjon*/
+.navigasjon {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navigasjon a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navigasjon a:hover {
+  background-color:white;
+  color: black;
+}
+
+.navigasjon a.active {
+  background-color: lightcoral;
+  color: white;
+}
+
 img {
   width: 100%;
 }
