@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -13,28 +15,33 @@ body {
 
 /*navigasjon*/
 .navigasjon {
+  background-color: rgba(0, 0, 0, 0.80);
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
   overflow: hidden;
-  background-color: black;
-  opacity: 0.8;
 }
 
 .navigasjon a {
   float: right;
-  display: block;
+  margin-right: 20px;
+  opacity: 1;
   color: white;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
 }
 
 .navigasjon a:hover {
-  color: rgb(58, 56, 56); 
+  color: white;
+  opacity: 0.3;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .navigasjon a.active {
   float: left;
-  background-color: black;
+  background-color: rgb(59, 59, 147);
   color: white;
   letter-spacing: 1px;
 }
@@ -43,15 +50,25 @@ img {
   width: 100%;
 }
 
+#about{
+  background-color: rgb(59, 59, 147);
+  background-size: contain;
+}
+
 h1{
   font-size: 60px;
   text-align: center;
+  color: white;
 }
 
 p{
   margin-left: 20%;
   margin-right: 20%;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
+  color: white
 }
 
+#product{
+  background-color: teal;
+}
