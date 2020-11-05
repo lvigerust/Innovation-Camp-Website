@@ -199,6 +199,10 @@ nav {
     margin: 0 auto;
     margin-bottom: 2em;
   }
+  .hero__text {
+    width: 85%;
+    text-align: center;
+  }
 }
 
 @media (min-width: 740px) {

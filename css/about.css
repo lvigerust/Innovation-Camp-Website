@@ -54,7 +54,8 @@ h1 {
 }
 
 .hero {
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 50px;
   background-color: #f1faee;
   color: #1d3557;
 }
@@ -157,6 +158,10 @@ nav {
   .hero__img {
     margin: 0 auto;
     margin-bottom: 2em;
+  }
+  .hero__text {
+    width: 85%;
+    text-align: center;
   }
 }
 
