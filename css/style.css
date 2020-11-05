@@ -8,32 +8,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-}
-
-/*navigasjon*/
-.navigasjon {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.navigasjon a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.navigasjon a:hover {
-  background-color:white;
-  color: black;
-}
-
-.navigasjon a.active {
-  background-color: lightcoral;
-  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -54,11 +29,13 @@ h1 {
   background-color: #e63946;
   padding: 0.75em 2em;
   border-radius: 100px;
+  transition: 250ms ease-in-out;
 }
 
 .btn:hover,
 .btn:focus {
   opacity: 0.9;
+  transform: scale(1.1);
 }
 
 .container {
@@ -81,7 +58,7 @@ h1 {
 }
 
 .hero {
-  padding: 100px;
+  padding: 100px 0;
   background-color: #457b9d;
   color: #f1faee;
 }
@@ -147,20 +124,33 @@ nav {
   color: #e63946;
 }
 
-.nav-links {
+.nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  align-items: center;
   width: 40%;
 }
 
-.nav-links li {
+@media (max-width: 800px) {
+  .nav-list {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 800px) {
+  .nav__item + .nav__item {
+    margin-left: 1.5em;
+  }
+}
+
+.nav-list li {
   list-style: none;
 }
 
-.nav-links a {
+.nav-list a {
   color: #f1faee;
   text-decoration: none;
   letter-spacing: 3px;
@@ -168,6 +158,6 @@ nav {
   font-size: 14px;
 }
 
-.nav-links a:hover {
+.nav-list a:hover {
   color: #e63946;
 }
