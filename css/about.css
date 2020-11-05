@@ -59,16 +59,20 @@ h1 {
 
 .hero {
   padding: 100px 0;
-  background-color: #457b9d;
-  color: #f1faee;
+  background-color: #f1faee;
+  color: #1d3557;
 }
 
 .hero__text {
   width: 62%;
 }
 
+.hero__text span {
+  font-weight: bold;
+}
+
 .hero__img {
-  width: 32%;
+  width: 25%;
   align-self: flex-start;
 }
 
@@ -79,10 +83,15 @@ h1 {
 .three-col {
   padding: 3em 0;
   text-align: center;
+  background-color: #1d3557;
 }
 
 .three-col h2 {
-  color: #1d3557;
+  color: #f1faee;
+}
+
+.three-col p{
+    color: #f1faee;
 }
 
 .two-col h2 {
@@ -92,7 +101,7 @@ h1 {
 .two-col {
   text-align: center;
   padding: 3em 0;
-  background-color: #1d3557;
+  background-color: #457b9d;
   color: #f1faee;
 }
 
@@ -106,7 +115,7 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   min-height: 8vh;
-  background-color: #1d3557;
+  background-color: #457b9d;
   font-family: "Poppins", sans-serif;
   width: 100%;
   position: sticky;
