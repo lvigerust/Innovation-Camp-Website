@@ -17,7 +17,7 @@ img {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: clamp(1.75rem, calc(5vw + 1rem), 3rem);
   margin-top: 0;
 }
 
@@ -149,6 +149,14 @@ nav {
   }
   .two-col {
     align-items: baseline;
+  }
+  .reverse-row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .hero__img {
+    margin: 0 auto;
+    margin-bottom: 2em;
   }
 }
 
