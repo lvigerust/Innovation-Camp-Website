@@ -3,24 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <title>Innovation Camp Website
     </title>
 </head>
 <body>
+
+    <!-- NAVIGATION BAR -->
     <header>
         <nav>
-            <div class="navigasjon">
-                <a href="index.html" class="active">Home</a>
-                <a href="Ourteam.html">Staff</a>
-                <a href="schedule.html">Schedule</a>
-                <a href="contact.html">Contact</a>
+            <div class="logo">
+                <h4><span>Super</span> Necklace</h4>
             </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        
+    <!-- VELKOMSTSKJERM -->
+    <section class="hero">
+        <div class="container row">
+            <div class="hero__text">
+                <h1>Super Necklace</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium deserunt repellendus optio fuga pariatur earum culpa laborum recusandae magnam consequatur.</p>
+                <a href="#" class="btn">I'm interested</a>
+            </div>
+            <img src="/imgs/necklace.png" alt="" class="hero__img">
+        </div>
+    </section>
+
+    <main class="main">
+
+        <!-- INTRODUKSJON TIL PRODUKTET -->
+        <section class="three-col">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Affordable</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure nulla, aspernatur accusantium ipsa beatae odit.</p>
+                    </div>
+                    <div class="col">
+                        <h2>Effective</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptatem reiciendis aliquid! Praesentium, tenetur deserunt.</p>
+                    </div>
+                    <div class="col">
+                        <h2>Lightweight</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium nam minima cupiditate ut molestiae?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MER INFORMASJON OM PRODUKTET -->
+        <section class="two-col">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, ab? Quis amet voluptatem minus cum.</p>
+                    </div>
+                    <div class="col">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iure in similique nam, saepe natus?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
 </body>
 </html>
