@@ -184,7 +184,7 @@ nav {
 }
 
 /* MOBILE MEDIA QUERIES */
-@media (max-width: 800px) {
+@media (max-width: 740px) {
   .nav-list {
     flex-direction: column;
   }
@@ -193,7 +193,7 @@ nav {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 740px) {
   .nav__item + .nav__item {
     margin-left: 1.5em;
   }
