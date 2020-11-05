@@ -53,10 +53,6 @@ h1 {
   width: 100%;
 }
 
-.col + .col {
-  margin-left: 30px;
-}
-
 .hero {
   padding: 100px 0;
   background-color: #457b9d;
@@ -154,13 +150,13 @@ nav {
   color: #e63946;
 }
 
-.contact-body{
+.contact-body {
   background-color: #457b9d;
 }
 
 .contactbox {
   height: fit-content;
-  width: 50%;
+  width: 80%;
   background-color: white;
   margin: auto;
   margin-top: 3%;
@@ -170,25 +166,28 @@ nav {
   border-radius: 30px;
   font-size: 18px;
   text-align: center;
+  max-width: 700px;
 }
 
-.inputfield{
+.inputfield {
   width: 70%;
 }
 
-.inputfield:not(textarea){
+.inputfield:not(textarea) {
   height: 30px;
 }
 
-.submitbutton{
+.submitbutton {
   height: 50px;
   width: 100px;
 }
 
-
-
+/* MOBILE MEDIA QUERIES */
 @media (max-width: 800px) {
   .nav-list {
+    flex-direction: column;
+  }
+  .mobile-row {
     flex-direction: column;
   }
 }
@@ -196,5 +195,8 @@ nav {
 @media (min-width: 800px) {
   .nav__item + .nav__item {
     margin-left: 1.5em;
+  }
+  .col + .col {
+    margin-left: 30px;
   }
 }

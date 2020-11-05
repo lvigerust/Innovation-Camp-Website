@@ -53,10 +53,6 @@ h1 {
   width: 100%;
 }
 
-.col + .col {
-  margin-left: 30px;
-}
-
 .hero {
   padding: 100px 0;
   background-color: #f1faee;
@@ -90,8 +86,8 @@ h1 {
   color: #f1faee;
 }
 
-.three-col p{
-    color: #f1faee;
+.three-col p {
+  color: #f1faee;
 }
 
 .two-col h2 {
@@ -147,11 +143,20 @@ nav {
   .nav-list {
     flex-direction: column;
   }
+  .mobile-row {
+    flex-direction: column;
+  }
+  .two-col {
+    align-items: baseline;
+  }
 }
 
 @media (min-width: 800px) {
   .nav__item + .nav__item {
     margin-left: 1.5em;
+  }
+  .col + .col {
+    margin-left: 30px;
   }
 }
 
